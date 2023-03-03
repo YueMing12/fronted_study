@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="vue.min.js"></script><!-- 引入json文件 -->
+    <!-- 创建标签显示vue的内容 -->
+    <div id="app">
+        <!-- 差值表达式 用于获取data变量中的值 -->
+        {{message}}
+
+    </div>
+    <script>
+        new Vue({
+            el:'#app',//指定vue最终在页面的哪个标签中显示
+            data:{//初始值
+                message:'hello vue'
+            },
+        })
+    </script>
+
+</body>
+</html>
